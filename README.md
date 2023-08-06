@@ -1,14 +1,8 @@
-# Getting started
+# embedchain-bot
 
-## Installation
+## Docker Setup
 
-- Create and activate the virtual environment.
-
-- Install the required packages.
-
-- Rename the sample.env to .env
-
-- Set your `OPENAI_API_KEY` in the .env file.
+- Open variables.env, and edit it to add your Open AI API Key.
 
 - Go to [https://discord.com/developers/applications/](https://discord.com/developers/applications/) and click on `New Application`.
 
@@ -16,7 +10,7 @@
 
 - On the left sidebar, click on `Bot`. Under the heading `Privileged Gateway Intents`, toggle all 3 options to ON position. Save your changes.
 
-- Now click on `Reset Token` and copy the token value. Set it as `DISCORD_BOT_TOKEN` in .env file.
+- Now click on `Reset Token` and copy the token value. Set it as `DISCORD_BOT_TOKEN` in variables.env file.
 
 - On the left sidebar, click on `OAuth2` and go to `URL Generator`. Under `Scopes` select `bot`.
 
@@ -35,13 +29,12 @@ Mention everyone
 
 - The bot has been successfully added to your server.
 
-## Usage
-
-- Activate your virtual environment, and run the discord bot server using the command
-
+- To setup your discord server using docker, run the following command inside this folder using your terminal.
 ```bash
-python discord_bot.py
+docker-compose up --build
 ```
+
+## Usage
 
 - You can add data sources to the bot as follows:
 
