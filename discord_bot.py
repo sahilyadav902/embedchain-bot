@@ -32,7 +32,6 @@ async def add(ctx, data_type: str, *, url_or_text: str):
     try:
         chat_bot.add(data_type, url_or_text)
         await ctx.reply(f"Added {data_type} : {url_or_text}")
-        # print(f"Added {data_type} : {url_or_text}")
     except Exception as e:
         await ctx.reply(f"Failed to add {data_type} : {url_or_text}")
         print("Error occurred during 'add' command:", e)
