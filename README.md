@@ -12,9 +12,11 @@
 
 - Now click on `Reset Token` and copy the token value. Set it as `DISCORD_BOT_TOKEN` in variables.env file.
 
-- On the left sidebar, click on `OAuth2` and go to `URL Generator`. Under `Scopes` select `bot`.
+- On the left sidebar, click on `OAuth2` and go to `General`.
 
-- Under `Bot Permissions` allow the following
+- Set `Authorization Method` to `In-app Authorization`. Under `Scopes` select `bot`.
+
+- Under `Bot Permissions` allow the following and then click on `Save Changes`.
 
 ```text
 Read Messages/View Channel
@@ -22,6 +24,9 @@ Send Messages
 Read Message History
 Mention everyone
 ```
+- Now under `OAuth2` and go to `URL Generator`. Under `Scopes` select `bot`.
+
+- Under `Bot Permissions` set the same permissions as above.
 
 - Now scroll down and copy the `Generated URL`. Paste it in a browser window and select the Server where you want to add the bot.
 
@@ -47,6 +52,8 @@ docker-compose up --build
 ```text
 /embedchain query <question>
 ```
+
+Note: To use the bot privately, you can message the bot directly by right clicking the bot and selecting `Message`.
 
 ## Supported Data Types
 
